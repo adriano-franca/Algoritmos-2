@@ -14,6 +14,7 @@ def combine(n, k):
     bt([])
     return output
 
+#Caso de teste
 nums = [1,2,3]
 n = 4
 k = 2
