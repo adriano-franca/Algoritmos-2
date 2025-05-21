@@ -11,7 +11,8 @@ def searchInsert(nums, target):
         else:
             esq = meio + 1
     return esq
-    
+
+#Caso de teste
 nums = [1, 3, 5, 6, 7]
 print(searchInsert(nums, 3))
 #metade = len(nums)//2
