@@ -2,7 +2,6 @@ import heapq
 
 def deleteGreatestValue(grid):
     heaps = []
-    m = len(grid)
     n = len (grid[0])
 
     for row in grid:
