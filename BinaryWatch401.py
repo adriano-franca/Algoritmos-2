@@ -15,5 +15,5 @@ def readBinaryWatch(turnedOn):
     return out
 
 #Caso de teste
-turnedOn = 1
+turnedOn = 4
 print(readBinaryWatch(turnedOn))

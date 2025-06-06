@@ -1,8 +1,6 @@
 def climbStairs(n, memo=dict()):
-    if n==1:
-        return 1
-    elif n==2:
-        return 2
+    if n<=3:
+        return n
     elif n in memo: 
         return memo[n]
     else:
@@ -10,5 +8,17 @@ def climbStairs(n, memo=dict()):
         return memo[n]
     
 #Caso de teste
-n = 2
-climbStairs(n, memo=dict())
+n = 4
+print(climbStairs(n, memo=dict()))
+
+def climbStairsIter(n):
+    if n<=3: return n
+    #return climbStairsIter(n-1, memo)+climbStairsIter(n-2, memo)
+    memo = [0, 1, 2, 3]
+    def pd(n):
+        while n+1>len(memo):
+            memo.append(memo[-1] + memo[-2])
+        return memo[n]
+    return pd(n)
+
+print(climbStairsIter(n))
