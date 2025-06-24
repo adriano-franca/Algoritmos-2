@@ -1,9 +1,3 @@
-#def maxProfit(prices):
-#    max_profit = 0
-#    for buy in range(n):
-#        for sell in range(buy+1, n):
-#            profit = prices[]
-
 def maxProFit(prices):
     menorValorAnterior = prices[0]
     profit = 0
